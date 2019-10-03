@@ -1,0 +1,52 @@
+/* RESET CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5;
+}
+
+p {
+  line-height: 2;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+.section-padding {
+  padding: 120px 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.primary {
+  color: #e84118;
+}
