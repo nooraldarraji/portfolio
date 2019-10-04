@@ -1,32 +1,32 @@
 /* RESET CSS */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  color: #777;
-  line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
 }
 
 p {
-  line-height: 2;
+    line-height: 2;
 }
 
 h3 {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 h5 {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 h1,
@@ -35,18 +35,86 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+    color: #333;
 }
 
 .section-padding {
-  padding: 120px 0;
+    padding: 120px 0;
 }
 
 .full-width {
-  width: 100%;
+    width: 100%;
 }
 
 .primary {
-  color: #e84118;
+    color: #e84118;
+}
+
+
+/* Header styles */
+
+header {
+    background-color: #333;
+}
+
+a.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 25px 0;
+}
+
+nav a,
+nav a:hover {
+    color: #fff;
+}
+
+li.nav-item a.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+li.nav-item a.nav-link::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #e84118;
+    content: '';
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+li.nav-item.active a.nav-link::after {
+    width: 100%;
+}
+
+li.nav-item a.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+li.nav-item {
+    margin: 0 15px;
+}
+
+li.nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+button:focus {
+    outline: none;
 }
