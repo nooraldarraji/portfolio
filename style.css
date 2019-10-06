@@ -16,6 +16,8 @@ body {
     color: #777;
     line-height: 1.5;
     height: 3000px;
+    /* background-color: black; */
+    background-color: #030409;
 }
 
 p {
@@ -223,6 +225,10 @@ button:focus {
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .cta-portfolio {
@@ -288,4 +294,89 @@ canvas {
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+
+/* About Styles */
+
+.about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.about h5 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-social-icons {
+    margin-top: 20px;
+}
+
+.about-social-icons a {
+    padding: 0 10px;
+    color: #fff;
+}
+
+.about-social-icons .fa-linkedin-square {
+    margin-left: 50px;
+}
+
+.about-social-icons .fa-linkedin-square:hover {
+    color: #0077b5;
+    /* LinkedIN*/
+}
+
+.about-social-icons .fa-twitter-square:hover {
+    color: #1da1f2;
+    /* Twitter */
+}
+
+.about-social-icons .fa-github-square:hover {
+    color: #333;
+    /* Github */
+}
+
+.about-social-icons .fa-youtube-play:hover {
+    color: red;
+    /* Github */
+}
+
+.about-contact {
+    padding: 10px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    color: #333;
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-contact::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    content: '';
+    background-color: #e84118;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.about-contact:hover::after {
+    left: 0;
 }
