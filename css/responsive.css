@@ -1,0 +1,21 @@
+@media screen and (max-width: 991px) {
+    .navbar-nav li.nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+    .navbar-brand {
+        margin-left: 15px;
+    }
+    .navbar-nav-bg {
+        background-color: rgba(0, 0, 0, 0.8)
+    }
+}
+
+@media screen and (min-width: 374px) {
+    .main-content {
+        margin-top: 200px;
+    }
+    .main-content .type {
+        font-size: 20px;
+    }
+}
