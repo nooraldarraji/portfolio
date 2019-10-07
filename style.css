@@ -16,8 +16,8 @@ body {
     color: #777;
     line-height: 1.5;
     height: 3000px;
-    /* background-color: black; */
-    background-color: #030409;
+    background-color: black;
+    /* background-color: #030409; */
 }
 
 p {
@@ -66,7 +66,7 @@ a:hover {
 .svg-bottom {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     z-index: 2;
 }
@@ -74,7 +74,7 @@ a:hover {
 .svg-top {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    top: -1px;
     left: 0;
     z-index: 2;
 }
@@ -418,16 +418,40 @@ canvas {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(119, 119, 119, 0.0)
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(119, 119, 119, 0.0) */
 }
 
 .exp-skills h3,
-.exp-skills h5 {
+.exp-skills h5,
+.exp-skills div {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
+    font-weight: lighter;
 }
 
-#noor-mon-programming {
-    font-family: 'Montserrat', sans-serif;
+.exp-skills .education h5 {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: lighter; */
+    /* color: #fff; */
+}
+
+.exp-skills .education div {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: lighter; */
+    color: #777;
+}
+
+.exp-skills .experience h5 {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: lighter; */
+    /* color: #fff; */
+}
+
+.exp-skills .experience div {
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: lighter; */
+    color: #777;
 }
 
 .exp-skills h5 {
@@ -440,6 +464,9 @@ canvas {
 
 .skills h6 {
     margin: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: lighter;
 }
 
 .progress-content {
