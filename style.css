@@ -84,6 +84,17 @@ a:hover {
 }
 
 
+/* .icon-overlay:hover {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    background-color: #fff;
+    color: #333;
+} */
+
+
 /* Header styles */
 
 header {
@@ -606,4 +617,99 @@ canvas {
 
 .service-single:hover .service-icon .fab {
     transform: scale(1.2)rotateY(360deg)
+}
+
+
+/* Portfolio Styles */
+
+.item-content {
+    width: 100%;
+    position: relative;
+    border: 3px solid #fff;
+}
+
+.item-content img {
+    width: 100%;
+}
+
+.portfolio-item.col-md-3 img {
+    height: 200px;
+}
+
+.portfolio-item.col-md-6 img {
+    height: 400px;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    /* background-color: #fff;
+    color: #333; */
+    content: '';
+    overflow: hidden;
+}
+
+.img-overlay::before {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    content: '';
+    left: -110%;
+    top: 0;
+    transition: all 0.5s ease;
+}
+
+.img-overlay::after {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: rgba(232, 65, 24, 0.8);
+    content: '';
+    right: -110%;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item .info {
+    z-index: 2;
+    position: relative;
+}
+
+.portfolio-item .info .description {
+    color: #e84118;
+    opacity: 0;
+    top: -20px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item .info .item-icon {
+    color: #fff;
+    opacity: 0;
+    bottom: -20px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item:hover .item-content .img-overlay::before {
+    left: 0;
+}
+
+.portfolio-item:hover .img-overlay::after {
+    right: 0;
+}
+
+.portfolio-item:hover .info .item-icon {
+    opacity: 1;
+    bottom: -5px;
+}
+
+.portfolio-item:hover .info .description {
+    opacity: 1;
+    top: -5px;
+    ;
 }
