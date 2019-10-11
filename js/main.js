@@ -51,6 +51,15 @@ $(window).scroll(function() {
         })
     })
 
+    var $grid = $('.projects-container').isotope({
+        itemSelector: '.projects-item'
+    })
 
+    $('.filter li').on('click', function() {
+        $('.filter li').removeClass('filter-active')
+        var filterValue = $(this).attr('data-filter')
+        $grid.isotope({ filter: filterValue })
+        $(this).addClass('filter-active')
+    })
 
 })
