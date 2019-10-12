@@ -773,3 +773,70 @@ ul.filter li.filter-active {
 .projects ul.filter {
     z-index: 2;
 }
+
+
+/* Contant Styles */
+
+.contact {
+    position: relative;
+    background: url(img/main2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ddd;
+}
+
+.contact h3 {
+    color: #fff;
+}
+
+.contact::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-top,
+.contac-form {
+    margin-top: 40px;
+}
+
+.contact-location .contact-email .contact-linkedin {
+    font-weight: bold;
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ddd;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+input:not([type="submit"]) {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+textarea {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#submit {
+    width: auto;
+    /* margin: 0 auto; */
+    max-width: 50%;
+    padding: 8px 60px;
+    border: none;
+    color: #fff;
+    background-color: #e84118;
+    cursor: pointer;
+}
