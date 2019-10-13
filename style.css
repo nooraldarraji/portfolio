@@ -803,6 +803,7 @@ ul.filter li.filter-active {
 .contact-top,
 .contac-form {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .contact-location .contact-email .contact-linkedin {
@@ -839,4 +840,16 @@ textarea {
     color: #fff;
     background-color: #e84118;
     cursor: pointer;
+}
+
+.contact i.fa {
+    margin-right: 15px;
+}
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #e84118;
 }
