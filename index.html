@@ -27,7 +27,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg full-width">
@@ -57,16 +57,28 @@
 
 
     <!-- Main Section - Start -->
-    <section class="main d-flex justify-content-center">
+    <section class="main d-flex justify-content-center" id="main">
         <div id="noorftw"></div>
         <div class="main-content align-self-center">
-            <div class="welcome">Welcome!</div>
+            <div class="hi"></div>
             <div class="type"><span class="noorname-desc"></span></div>
             <div class="social-icons">
-                <a href="#"><i class="fa fa-linkedin-square icon-overlay"></i></a>
-                <a href="#"><i class="fa fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-github-square"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a class="fa-stack">
+                    <i class="fa fa-square fa-stack-1x"></i>
+                    <i class="fa fa-linkedin-square fa-stack-1x"></i>
+                </a>
+                <a class="fa-stack">
+                    <i class="fa fa-square fa-stack-1x"></i>
+                    <i class="fa fa-twitter-square fa-stack-1x"></i>
+                </a>
+                <a class="fa-stack" alt="ok">
+                    <i class="fa fa-square fa-stack-1x"></i>
+                    <i class="fab fa-github-square fa-stack-1x"></i>
+                </a>
+                <a class="fa-stack">
+                    <i class="fa fa-square fa-stack-1x"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x"></i>
+                </a>
             </div>
 
             <a class="cta cta-portfolio" href="#">Portfolio</a>
@@ -84,7 +96,7 @@
 
     <!-- About section - Start -->
 
-    <section class="section-padding about">
+    <section class="section-padding about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-5" class="img-fluid" alt="about image">
@@ -92,13 +104,7 @@
                 </div>
                 <div class="col-md-7">
                     <h3>About Me</h3>
-                    <h5 class="about-social-icons">Full-Stack Web Developer
-                        <!-- <span class="about-social-icons"> -->
-                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-github-square"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    </h5>
+                    <h5>Full-Stack Web Developer</h5>
                     <p>I'm a Full-Stack Web Developer with a passion for technology and coding ideas to life. Through 2+ years of self-taught programming, I’ve built several webs and CLI applications. I am currently Lambda School's Full Stack Web program
                         student. Along with my passion for learning, I taught my self how to code and learn a new thing every day. When I’m not smashing the keyboard keys, I enjoy music, going to the gym, travel with the company of my good friends. My
                         ambition is to become a better software engineer each day by way of personal projects, staying current with industry trends, collaborating with others and pursuing new technical interests to achieve my goal to become an ethical
@@ -271,7 +277,7 @@
 
     <!-- Projects section - Start -->
 
-    <section class="section-padding projects">
+    <section class="section-padding projects" id="projects">
         <svg viewBox="0 0 1400 100" class="svg-top">
                     <!-- <polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill:red";> -->
                             <polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill:black";>

@@ -30,10 +30,12 @@ a:hover {
 
 h3 {
     font-size: 36px;
+    font-family: "Montserrat", sans-serif;
 }
 
 h5 {
     font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -193,13 +195,15 @@ button:focus {
     z-index: 1;
 }
 
-.main-content .welcome {
+.main-content .hi {
+    font-family: "Montserrat", sans-serif;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
 }
 
 .main-content .type {
+    font-family: "Montserrat", sans-serif;
     font-size: 60px;
     color: #fff;
     margin-top: 20px;
@@ -215,7 +219,7 @@ button:focus {
 }
 
 .main-content .social-icons .fa-linkedin-square {
-    color: #0077b5;
+    /* color: #0077b5; */
     font-size: 25px;
     /* background-color: white;
     border-top-left-radius: 10px;
@@ -225,20 +229,37 @@ button:focus {
     /* LinkedIN*/
 }
 
+.main-content .social-icons .fa-linkedin-square:hover {
+    /* background-color: white;
+    background-size: 30;
+    z-index: -1;
+    overflow: hidden; */
+    /* background: white;
+    border-radius: 100%;
+    height: 0.5em;
+    width: 0.5em; */
+    /* background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    /* LinkedIN*/
+}
+
 .main-content .social-icons .fa-twitter-square {
-    color: #1da1f2;
+    /* color: #1da1f2; */
     font-size: 25px;
     /* Twitter */
 }
 
 .main-content .social-icons .fa-github-square {
-    color: black;
+    /* color: black; */
     font-size: 25px;
     /* Github */
 }
 
 .main-content .social-icons .fa-youtube-play {
-    color: red;
+    /* color: red; */
     font-size: 25px;
     /* Github */
 }
@@ -248,7 +269,9 @@ button:focus {
     margin-right: 15px;
     padding: 10px 60px;
     font-size: 15px;
-    font-weight: bold;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: bold; */
     display: inline-block;
     margin-top: 40px;
     position: relative;
@@ -351,7 +374,8 @@ canvas {
     font-family: "Montserrat", sans-serif;
 }
 
-.about-social-icons {
+
+/* .about-social-icons {
     margin-top: 20px;
 }
 
@@ -366,28 +390,30 @@ canvas {
 
 .about-social-icons .fa-linkedin-square {
     color: #0077b5;
-    /* LinkedIN*/
+    LinkedIN
 }
 
 .about-social-icons .fa-twitter-square {
     color: #1da1f2;
-    /* Twitter */
+    Twitter
 }
 
 .about-social-icons .fa-github-square {
     color: #333;
-    /* Github */
+    Github
 }
 
 .about-social-icons .fa-youtube-play {
     color: red;
-    /* Github */
-}
+    Github
+} */
 
 .about-contact {
     padding: 10px 60px;
     font-size: 15px;
-    font-weight: bold;
+    border-radius: 40px;
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: bold; */
     display: inline-block;
     color: #fff;
     border: 1px solid #333;
@@ -422,7 +448,7 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 700px;
+    /* height: 700px; */
     position: relative;
     color: #ddd;
 }
@@ -833,6 +859,7 @@ textarea {
 
 #submit {
     width: auto;
+    border-radius: 40px;
     /* margin: 0 auto; */
     max-width: 50%;
     padding: 8px 60px;
@@ -852,4 +879,53 @@ footer {
     width: 100%;
     color: #fff;
     background-color: #e84118;
+}
+
+
+/* Extra Styles */
+
+.fa-stack .fa.fa-linkedin-square {
+    color: #fff;
+}
+
+.fa-stack .fa.fa-square {
+    color: transparent;
+}
+
+.fa-stack:hover .fa.fa-linkedin-square {
+    color: #0077b5;
+}
+
+.fa-stack:hover .fa.fa-square {
+    color: #fff;
+    font-size: 20px;
+}
+
+.fa-stack .fa.fa-twitter-square {
+    color: #fff;
+}
+
+.fa-stack:hover .fa.fa-twitter-square {
+    color: #55acee;
+}
+
+.fa-stack .fab.fa-github-square {
+    color: #fff;
+}
+
+.fa-stack:hover .fab.fa-github-square {
+    color: #000000;
+}
+
+.fa-stack:hover .fa.fa-square {
+    color: #fff;
+    font-size: 18px;
+}
+
+.fa-stack .fa.fa-youtube-play {
+    color: #fff;
+}
+
+.fa-stack:hover .fa.fa-youtube-play {
+    color: red;
 }
