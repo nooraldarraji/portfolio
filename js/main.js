@@ -5,7 +5,7 @@ doc.ready(function() {
     'use strict';
 
     var typed = new Typed('.noorname-desc', {
-        strings: ['I am Noor', 'I am Full-Stack Web Developer', 'Let me know if you liked my work :)'],
+        strings: ['Hello, my name is Noor', 'I am Full-Stack Web Developer', 'Feel free to take a look at my projects', 'Contact me anytime using my socials below'],
         smartBackspace: true, // Default value
         loop: true,
         backDelay: 1000,
