@@ -355,6 +355,10 @@ canvas {
     /* height: 100%; */
 }
 
+.section-header h3 {
+    color: #fff;
+}
+
 .about .section-header {
     width: 100%;
     position: relative;
@@ -863,10 +867,11 @@ textarea {
     /* margin: 0 auto; */
     max-width: 50%;
     padding: 8px 60px;
-    border: none;
     color: #fff;
-    background-color: #e84118;
     cursor: pointer;
+    background-color: transparent;
+    /* border: 1px solid #e84118; */
+    /* color: #e84118; */
 }
 
 .contact i.fa {
@@ -878,7 +883,10 @@ footer {
     line-height: 40px;
     width: 100%;
     color: #fff;
-    background-color: #e84118;
+    border-top: 1px solid #e84118;
+    background-color: transparent;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 
