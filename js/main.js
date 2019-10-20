@@ -4,16 +4,22 @@ doc.ready(function() {
 
     'use strict';
 
+    $(window).scrollTop(0) //  Re-set the scroll value to zero so the navbar color won't get faded on refresh.
+
     var typed = new Typed('.noorname-desc', {
-        strings: ['Hello, my name is Noor', 'I am Full-Stack Web Developer', 'Feel free to take a look at my projects', 'Contact me anytime using my socials below'],
+        strings: ['Hello, my name is Noor, I am Full-Stack Web Developer, feel free to take a look at my latest projects and contact me using any of my socials below.'],
         smartBackspace: true, // Default value
-        loop: true,
+        loop: false,
         backDelay: 1000,
         showCursor: true,
         cursorChar: '_',
         autoInsertCss: true,
         typeSpeed: 40
     })
+
+    $('.navbar-nav').onePageNav({
+        currentClass: 'active'
+    });
 })
 
 if ($(window).scrollTop() < 200) {
