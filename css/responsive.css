@@ -51,6 +51,10 @@
     ul.filter li {
         margin: 10px;
     }
+    .main {
+        background-size: 375px 675px;
+        background-position: center;
+    }
     .exp-skills {
         background-size: 375px 375px;
         background-position: center;
