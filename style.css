@@ -596,6 +596,9 @@ canvas {
     margin: 30px 0px;
 }
 
+h5.service-name {
+    font-size: 35px;
+}
 .service-icon {
     width: 60px;
     height: 60px;

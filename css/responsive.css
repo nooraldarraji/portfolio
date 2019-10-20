@@ -48,7 +48,19 @@
     .contact i.fa {
         margin-right: 0;
     }
-    ul.filter li.filter-active {
+    ul.filter li {
         margin: 10px;
+    }
+    .exp-skills {
+        background-size: 375px 375px;
+        background-position: center;
+    }
+    .projects {
+        background-size: 375px 375px;
+        background-position: center;
+    }
+    .contact {
+        background-size: 375px 375px;
+        background-position: center;
     }
 }
