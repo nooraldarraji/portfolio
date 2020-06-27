@@ -218,8 +218,8 @@ button:focus {
   font-size: 25px;
   color: #fff;
   margin-top: 20px;
-  /* width: 50%; */
-  /* margin: auto; */
+  width: 50%;
+  margin: auto;
   /* padding-bottom: 5%; */
 }
 
